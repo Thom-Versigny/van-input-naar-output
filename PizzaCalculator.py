@@ -10,15 +10,15 @@ print(""" ----------------------------------------------------
  ----------------------------------------------------""")
 size = int(input('Choose the size: small press 1, medium press 2, large press 3: '))
 muchpizza = int(input('How many pizzas do you want? '))
-if size == small and muchpizza < 10:
+if size == small and muchpizza <= 10:
 	print('you chose ',muchpizza,', small pizzas that will cost you:',5.99 * muchpizza,'$')
 	input("Press enter to pay")
 
-if size == medium and muchpizza < 10:
+if size == medium and muchpizza <= 10:
 	print('you chose ',muchpizza,', medium pizzas that will cost you:',7.99 * muchpizza,'$')
 	input("Press enter to pay")
 
-if size == large and muchpizza < 10:
+if size == large and muchpizza <= 10:
 	print('you chose ',muchpizza,', large pizzas that will cost you:',9.99 * muchpizza,'$')
 	input("Press enter to pay")
 
